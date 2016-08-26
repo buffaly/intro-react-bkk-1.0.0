@@ -1,0 +1,123 @@
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  background-color: #eee;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  color: #333;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.card {
+  border: 1px solid #e4e4e4;
+  background-color: #fff;
+  box-shadow: 0 21px 50px -2px rgba(0, 0, 0, .15);
+}
+
+.to-do-box {
+  padding: 40px;
+  text-align: center;
+}
+
+.input-todo {
+  padding: 10px 20px;
+  width: 100%;
+  height: 50px;
+  padding-right: 85px;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+  box-shadow: inset 0 0 20px 0 rgba(0, 0, 0, .05);
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.title {
+  margin-bottom: 30px;
+}
+
+.bb-input {
+  position: absolute;
+  border: 0;
+  top: 0px;
+  right: 0px;
+  width: 50px;
+  height: 38px;
+  margin: 6px;
+  padding-right: 0px;
+  padding-left: 0px;
+  border-radius: 3px;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, .2), inset 0 2px 2px 0 hsla(0, 0%, 100%, .25);
+}
+
+.form-box {
+  position: relative;
+}
+.list-box {
+  margin-top: 20px;
+}
+.list-item {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  margin-top: -1px;
+  border: 1px solid #eee;
+}
+
+.text-list {
+  position: relative;
+  padding: 15px 60px 15px 15px;
+  border-radius: 3px;
+  color: #474747;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: left;
+}
+
+.bb-action {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 24px;
+  height: 24px;
+  margin-top: 16px;
+  margin-right: 15px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(255, 0, 0, .3);
+  border-radius: 50%;
+  background-color: rgba(255, 0, 0, .64);
+  opacity: 0.64;
+  color: #fff;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.tab-page {
+  width: 33.333%;
+  margin-top: -1px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  float: left;
+  border-style: solid none;
+  border-width: 1px;
+  border-color: #ddd;
+  text-align: center;
+}
+
+.tab-page.second {
+  border-right-style: solid;
+  border-left-style: solid;
+}
+
+@media (max-width: 991px) {
+  body {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}
+
+@media (max-width: 767px) {
+  .to-do-box {
+    padding: 40px 20px;
+  }
+}
