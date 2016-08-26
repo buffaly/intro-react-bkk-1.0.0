@@ -26,6 +26,14 @@ export class Todo extends Component {
     }
   }
 
+  deleteListAtIndex = (index) => {
+    const resule = this.state.listItem;
+    resule.splice(index, 1);
+    this.setState({
+        listItem: resule
+    });
+  }
+
   render() {
     return (
       <div className="card clearfix">
@@ -41,13 +49,20 @@ export class Todo extends Component {
                   <button className="bb-input button"
                           onClick={this.submitList}>Add</button>
               </div>
-              {
-                this.state.listItem.map((value, index) => {
-                  return (
-                    <h3 key={index + value}>{value}</h3>
-                  );
-                })
-              }
+
+              <div className="list-box">
+                {this.state.listItem.map((value, index) => {
+                    return (
+                      <div key={index + value}
+                           className="list-item">
+                          <div className="text-list">{value}</div>
+                          <div className="bb-action"
+                               onClick={this.deleteListAtIndex.bind(this, index)}>x</div>
+                      </div>
+                    );
+                })}
+              </div>
+
           </div>
       </div>
     );
