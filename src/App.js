@@ -9,11 +9,15 @@ class App extends Component {
       <div className="App">
         <div className="container">
             <div className="row">
-                <div className="col-md-3"></div>
-                <div className="col-md-6">
-                  <Todo />
+                <div className="col-md-3">
+                  <Todo buttonColor="red"/>
                 </div>
-                <div className="col-md-3"></div>
+                <div className="col-md-6">
+                  <Todo buttonColor="green"/>
+                </div>
+                <div className="col-md-3">
+                  <Todo buttonColor="blue"/>
+                </div>
             </div>
         </div>
       </div>
