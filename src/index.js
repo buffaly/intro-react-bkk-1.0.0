@@ -2,12 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 
+import { render } from 'react-dom'
+
+import { Router, Route, browserHistory } from 'react-router'
 import Page1 from './Page/Page1';
 import Page2 from './Page/Page2';
 import Page3 from './Page/Page3';
-
-import { render } from 'react-dom'
-import { Router, Route, browserHistory } from 'react-router'
 
 ReactDOM.render(
   <Router history={browserHistory}>
