@@ -31,10 +31,10 @@ export class Todo extends Component {
   }
 
   deleteListAtIndex = (index) => {
-    const resule = this.state.listItem;
-    resule.splice(index, 1);
+    const result = this.state.listItem;
+    result.splice(index, 1);
     this.setState({
-        listItem: resule
+        listItem: result
     });
   }
 
